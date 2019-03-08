@@ -2,3 +2,13 @@
 
 # laravel pdf with lara-pdf
 Generate Laravel pdf document with lara-pdf.
+
+# Installation
+
+```bash
+composer require code4mk/lara-pdf
+```
+
+# Documentation
+
+* [lara-pdf official doc](https://code4mk.org/laravel/package/lara-pdf)
