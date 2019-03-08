@@ -1,0 +1,45 @@
+{
+  "name": "code4mk/lara-pdf",
+  "description": "Generate Laravel pdf document from html",
+  "keywords": [
+    "laravel",
+    "pdf",
+    "laravel-pdf",
+    "mpdf",
+    "php-pdf",
+    "0devco",
+    "code4mk"
+  ],
+  "homepage": "https://github.com/code4mk/lara-pdf",
+  "support": {
+    "issues": "https://github.com/code4mk/lara-pdf/issues",
+    "source": "https://github.com/code4mk/lara-pdf"
+  },
+  "authors": [
+    {
+      "name": "code4mk",
+      "email": "hiremostafa@gmail.com",
+      "homepage": "https://code4mk.org",
+      "role": "code artist"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+      "mpdf/mpdf": "^7.1"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Code4mk\\LARAPDF\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Code4mk\\LARAPDF\\LARAPDFServiceProvider"
+        ]
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
