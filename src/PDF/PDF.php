@@ -128,9 +128,9 @@ class PDF
       'margin_footer' => $this->marginFooter,
       'format' => $this->setFormat,
       'mode' => 'UTF-8',
-      'default_font' => Config::get('kpdf.default_font'),
-      'fontDir' => array_merge($fontDirs,Config::get('kpdf.fontDir')),
-      'fontdata' => $fontData + Config::get('kpdf.fontData')
+      'default_font' => Config::get('lara-pdf.default_font'),
+      'fontDir' => array_merge($fontDirs,Config::get('lara-pdf.fontDir')),
+      'fontdata' => $fontData + Config::get('lara-pdf.fontData')
     ];
 
 

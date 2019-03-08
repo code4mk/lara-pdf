@@ -24,13 +24,10 @@ class LARAPDFServiceProvider extends ServiceProvider
    {
 
      // publish config
-      // $this->publishes([
-      //  __DIR__ . '/../config/lara-pdf.php' => config_path('lara-pdf.php'),
-      // ], 'config');
-      // load config
-      $this->mergeConfigFrom(
-        __DIR__.'/../config/lara-pdf.php','lara-pdf'
-      );
+      $this->publishes([
+       __DIR__ . '/../config/lara-pdf.php' => config_path('lara-pdf.php'),
+      ], 'config');
+
 
       //load alias
       AliasLoader::getInstance()->alias('LARAPDF', 'Code4mk\LARAPDF\Facades\PDF');
