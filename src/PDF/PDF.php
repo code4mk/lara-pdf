@@ -42,11 +42,7 @@ class PDF
 
   public function __construct()
   {
-    //$this->format('a');
-  }
-
-  public function m(){
-    return "kamal";
+    //lara-pdf
   }
 
   public function loadView($view, $data = [], $mergeData = [])
@@ -173,10 +169,10 @@ class PDF
   }
 
 
-  public function save($filename)
+  public function save($filename,$driver='local')
   {
     $filePdf = explode('.',$filename);
-    Storage::disk('local')->put('kpdf/' . $filePdf[0] . '.pdf', $this->createPdf()->Output('','S'));
+    Storage::disk($driver)->put('kpdf/' . $filePdf[0] . '.pdf', $this->createPdf()->Output('','S'));
   }
 
  /**

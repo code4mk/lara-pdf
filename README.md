@@ -11,7 +11,7 @@ composer require code4mk/lara-pdf
 
 # Documentation
 
-* [lara-pdf official doc](https://code4mk.org/laravel/package/lara-pdf)
+* [lara-pdf official doc](https://code4mk.org/package/laravel/lara-pdf)
 
 # Main Feature
 
@@ -24,6 +24,8 @@ composer require code4mk/lara-pdf
 * mail send
 * text watermark
 * image watermark
+* barcode
+* qr code
 
 
 <a href="https://twitter.com/0devco" target="_blank" ><p align="center" ><img src="https://raw.githubusercontent.com/0devco/docs/master/.devco-images/logo-transparent.png"></p></a>
