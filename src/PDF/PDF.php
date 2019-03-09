@@ -172,7 +172,7 @@ class PDF
   public function save($filename,$driver='local')
   {
     $filePdf = explode('.',$filename);
-    Storage::disk($driver)->put('kpdf/' . $filePdf[0] . '.pdf', $this->createPdf()->Output('','S'));
+    Storage::disk($driver)->put($filePdf[0] . '.pdf', $this->createPdf()->Output('','S'));
   }
 
  /**
