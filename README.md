@@ -13,6 +13,11 @@ composer require code4mk/lara-pdf
 
 * [lara-pdf official doc](https://code4mk.org/package/laravel/lara-pdf)
 
+# live demo
+
+* [github lara-pdf demo](https://github.com/code4mk/larapdf-demo)
+* [live demo on heroku](http://larapdf.heroku.com)
+
 # Main Feature
 
 * load view
