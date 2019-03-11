@@ -16,7 +16,7 @@ composer require code4mk/lara-pdf
 # live demo
 
 * [github lara-pdf demo](https://github.com/code4mk/larapdf-demo)
-* [live demo on heroku](http://larapdf.heroku.com)
+* [live demo on heroku](https://larapdf.herokuapp.com/)
 
 # Main Feature
 
