@@ -126,13 +126,16 @@ class PDF
       'mode' => 'UTF-8',
       'default_font' => Config::get('lara-pdf.default_font'),
       'fontDir' => array_merge($fontDirs,Config::get('lara-pdf.fontDir')),
-      'fontdata' => $fontData + Config::get('lara-pdf.fontData')
+      'fontdata' => $fontData + Config::get('lara-pdf.fontData'),
+      'autoMarginPadding' => 1
     ];
 
 
 
     $mpdf = new \Mpdf\Mpdf($config);
     $mpdf->SetDisplayMode('real');
+    $mpdf->setAutoTopMargin = 'stretch';
+    $mpdf->setAutoBottomMargin  = 'stretch';
 
     if($this->isWatermarkText){
       $mpdf->SetWatermarkText($this->waterMarkText,$this->waterMarkTextOpacity);
