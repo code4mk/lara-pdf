@@ -111,7 +111,7 @@ class PDF
      return $this;
   }
 
-  public function largData($memory = "128M", $time = 1000000)
+  public function largeData($memory = "128M", $time = 1000000)
   {
     $this->isLargeData = true;
     $this->memorySize = $memory;
