@@ -23,7 +23,7 @@ composer require code4mk/lara-pdf
 * load view
 * load file
 * load core html
-* large data (6k+ row table)
+* large data (6k+ table rows)
 * pdf browser show
 * pdf download
 * pdf save in storage
