@@ -40,6 +40,10 @@ class PDF
   protected $waterMarkImageSize;
   protected $isWatermarkImage = false;
 
+  protected $isLargeData = false;
+  protected $memorySize;
+  protected $timeLimit;
+
   public function __construct()
   {
     //lara-pdf
@@ -107,8 +111,22 @@ class PDF
      return $this;
   }
 
+  public function largData($memory = "128M", $time = 1000000)
+  {
+    $this->isLargeData = true;
+    $this->memorySize = $memory;
+    $this->timeLimit = $time;
+    return $this;
+  }
+
   public function createPdf()
   {
+
+    if($this->isLargeData){
+      ini_set("memory_limit",$this->memorySize);
+      set_time_limit($this->timeLimit);
+    }
+
     $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
     $fontDirs = $defaultConfig['fontDir'];
 
